@@ -6,14 +6,9 @@ permalink: /about/
 
 # Introduction
 
-I love the minimalist approach of [Markdown](https://help.github.com/categories/writing-on-github/).
+I love the minimalist approach of [Markdown](https://help.github.com/categories/writing-on-github/) and {% include icon-github.html %}.
 
-Previously, I used below [Markdown](https://help.github.com/categories/writing-on-github/) based blogging services. But, somehow I never stick with them.
-
-- [Calepin](http://calepin.co/)
-- [Logdown](http://logdown.com/)
-
-I love {% include icon-github.html %}! Then, this project was inspired by {% include icon-github.html username="bradleythughes" %} /
+This project was inspired by {% include icon-github.html username="bradleythughes" %} /
 [bradleythughes.github.io](https://github.com/bradleythughes/bradleythughes.github.io) project.
 
 [Markdown](https://help.github.com/categories/writing-on-github/) + [Jekyll](https://jekyllrb.com/) + [Github](https://www.github.com/) = ᕕ( ᐛ )ᕗ
