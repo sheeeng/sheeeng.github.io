@@ -82,7 +82,7 @@ To verify the checksums of the downloaded files on your side, use the below comm
 
 ### WinUSB Driver for RTL2832U
 
-Plug in your USB dongle and then install RTL1090. All of the necessary libraries and drivers are located in `%USERPROFILE%\rtl1090` directory. 
+Plug in your USB dongle and then install RTL1090. All of the necessary libraries and drivers are located in `%USERPROFILE%\rtl1090` directory.
 
 You may have to run the Zadig setup, which you will find in the RTL1090 folder.
 
@@ -147,11 +147,11 @@ Running `dump1090.exe -h` in a command prompt window will return a list of all o
 
     dump1090.exe --interactive --net --net-ro-size 500 --net-ro-rate 5 --net-buffer 5 --net-beast --mlat
     pause
-    
+
 The second line, `pause`, ensures the application window stays open for you to see.
 
 ## Issue(s)
- 
+
 ### Use Flightradar24 feeder with own dump1090 program
 
 From [Flightradar24](http://feed.flightradar24.com/)
@@ -170,9 +170,9 @@ The fr24feed program is feeding data to Flightradar24 servers when the below lin
 
 	2015-08-31 18:00:00 | [feed][i]sent 1 AC in 1 packet
 
-Once the fr24feed program is running, the below pages should be accessible. 
+Once the fr24feed program is running, the below pages should be accessible in your localhost through port 8754.
 
-- [FR24 Feeder Status](http://localhost:8754/index.html)
-- [FR24 Feeder Settings](http://localhost:8754/settings.html)
-- [FR24 Feeder Tracked Aircraft](http://localhost:8754/tracked.html)
-- [FR24 Feeder Status Variables](http://localhost:8754/monitor.txt) - Debugging Variables
+- FR24 Feeder Status - index.html
+- FR24 Feeder Settings - settings.html
+- FR24 Feeder Tracked Aircraft - tracked.html
+- FR24 Feeder Status Variables - monitor.txt
