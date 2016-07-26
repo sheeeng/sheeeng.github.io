@@ -2,7 +2,7 @@
 layout: post
 title:  "Get ADS-B Data from RTL2832U"
 date:   2015-08-29 18:40
-categories: surveillance
+categories:
 ---
 From [Wikipedia](https://en.wikipedia.org/wiki/Automatic_dependent_surveillance_%E2%80%93_broadcast)
 
