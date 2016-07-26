@@ -29,4 +29,4 @@ _includes/
 
 ## Credits
 
-Read Michael Lee's [post](https://michaelsoolee.com/google-analytics-jekyll/) on further customizing Google analytics for Jekyll for use only in production environment. 
+Read Michael Lee's [post](https://michaelsoolee.com/google-analytics-jekyll/) or Jekyll [documentation](https://jekyllrb.com/docs/configuration/) on further customizing Google analytics for Jekyll for use only in production environment.
