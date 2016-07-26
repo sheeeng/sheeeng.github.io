@@ -2,7 +2,7 @@
 layout: post
 title:  "Quickly Test QtQuickControls Font Dialog"
 date:   2014-03-01 20:40
-categories: qt programming
+categories:
 ---
 
 We checkout `qtbase`, `qtxmlpatterns`, `qtdeclarative`, and `qtquickcontrols` sources from their stable branch in sequence. Use the patch below to enable `PURE_QML_ONLY` definition.
