@@ -16,15 +16,13 @@ _includes/
 
 - Insert {% raw %}`{% include analytics.html %}`{% endraw %} after {% raw %}`{% include head.html %}`{% endraw %} line in the `_layouts/default.html` file. This step ensures that the tracking code template will be included in all generated Jekyll pages.
 
-{% raw %}
-```
-    {% include head.html %}
-+   {% include analytics.html %}
-```
-{% endraw %}
+{% highlight patch %}
+    {% raw %}{% include head.html %}{% endraw %}
++   {% raw %}{% include analytics.html %}{% endraw %}
+{% endhighlight %}
 
 - Run `jekyll build` to generate the Jekyll site using the Google analytics template. You will notice that Google Analytics tracking code is included in the generated pages. For example, `_site/index.html`.
- 
+
 - Otherwise, run `jekyll serve` or `bundle exec jekyll serve` command to serve and test your site locally at `localhost:4000`.
 
 ## Credits
