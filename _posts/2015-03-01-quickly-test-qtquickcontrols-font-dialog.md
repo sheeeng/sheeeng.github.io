@@ -17,11 +17,11 @@ Under `~/qtproject/qtquickcontrols` directory,
     @@ -59,7 +59,7 @@
      #include <private/qguiapplication_p.h>
      #include <qpa/qplatformintegration.h>
-    
+
     -//#define PURE_QML_ONLY
     +#define PURE_QML_ONLY
      //#define DEBUG_REGISTRATION
-    
+
      static void initResources()
     $
 
@@ -31,21 +31,21 @@ Under `~/qtproject/qtbase` directory,
 
     $ ./configure -developer-build -opensource -confirm-license -verbose
     $ time make -j 64
-    
+
 Under `~/qtproject/qtxmlpatterns` directory,
-    
+
     $ ../qtbase/bin/qmake && time make -j 64
-    
+
 Under `~/qtproject/qtdeclarative` directory,
-    
+
     $ ../qtbase/bin/qmake && time make -j 64
 
 Under `~/qtproject/qtquickcontrols` directory,
-    
+
     $ ../qtbase/bin/qmake && time make -j 64
 
 Under `~/qtproject` directory,
-    
+
     $ qtbase/bin/qmlscene qtquickcontrols/examples/quick/dialogs/systemdialogs/FontDialogs.qml
 
 The above steps was used to [implement input for entering non-standard font size](https://codereview.qt-project.org/82603) for Qt Quick Controls [Font Dialog](http://qt-project.org/doc/qt-5/qml-qtquick-dialogs-fontdialog.html).
