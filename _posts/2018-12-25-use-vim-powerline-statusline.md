@@ -16,9 +16,9 @@ pip3 install powerline-status
 Append below lines in `~/.vimrc` file.
 
 ```python
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
 ```
 
 - Start a new terminal session.
