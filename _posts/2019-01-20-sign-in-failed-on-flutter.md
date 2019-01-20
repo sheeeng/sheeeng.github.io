@@ -5,11 +5,9 @@ date:   2019-01-20 00:20
 categories: dart firebase flutter authentication
 ---
 
-#
-
 While using [firebase_auth](https://pub.dartlang.org/packages/firebase_auth) and [google_sign_in](https://pub.dartlang.org/packages/google_sign_in) packages for Flutter, the below error was shown.
 
-# Sign In with Google Account
+## Sign In with Google Account
 
 ```dart
   Future<String> _signInGoogleAccount() async {
