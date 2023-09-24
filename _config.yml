@@ -21,3 +21,5 @@ markdown: kramdown
 
 timezone: Europe/Oslo
 exclude: [ README.md ]
+
+theme: minimal-mistakes-jekyll
