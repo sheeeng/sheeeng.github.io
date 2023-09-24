@@ -16,7 +16,7 @@ twitter_username: sheeeng
 github_username:  sheeeng
 linkedin_username: sheeeng
 
-# Build settings
+# Build settings?
 markdown: kramdown
 
 timezone: Europe/Oslo
