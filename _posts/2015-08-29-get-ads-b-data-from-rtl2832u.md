@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Get ADS-B Data from RTL2832U"
 date:   2015-08-29 18:40
 categories:
