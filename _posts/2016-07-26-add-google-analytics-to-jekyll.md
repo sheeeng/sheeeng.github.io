@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Add Google Analytics to Jekyll"
 date:   2016-07-26 09:00
 categories:

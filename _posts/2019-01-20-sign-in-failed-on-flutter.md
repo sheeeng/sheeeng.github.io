@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Sign In Failed on Flutter"
 date:   2019-01-20 00:20
 categories: dart firebase flutter authentication

@@ -9,8 +9,4 @@ set -o xtrace  # set -x
 # https://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
 shopt -s inherit_errexit
 
-bundle exec jekyll build
-
-bundle exec htmlproofer ./_site \
-    --only-4xx \
-    --ignore-urls "/#.*/"
+bundle exec jekyll serve
