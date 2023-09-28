@@ -19,12 +19,9 @@ baseurl: "" # the subpath of your site, e.g. /blog.
 email: leonardlee@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   The atmosphere had 340.92 CO₂ (ppm), 1600,69 CH₄ (ppb), and 303.56 N₂O (ppb) in the year that I took my first breath.
-# twitter_username: sheeeng
 github_username:  sheeeng
-# linkedin_username: sheeeng
-# https://mmistakes.github.io/minimal-mistakes/docs/configuration/#skin
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-search: true
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#skin
+search: true # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-search
 
 # Build settings
 markdown: kramdown
@@ -120,3 +117,15 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+twitter: # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-twitter-username
+  username: "sheeeng"
+
+facebook: # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#facebook-open-graph
+  username: "sheeeng"
+
+analytics: # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#analytics
+  provider: "google-gtag"
+  google:
+    tracking_id: "UA-81362922-1"
+    anonymize_ip: false # default
