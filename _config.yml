@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Leonard's WebLog
-logo: "assets/favicon/favicon-modified-auto.png" # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-masthead-logo
+logo: "favicon.png" # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-masthead-logo
 baseurl: "" # the subpath of your site, e.g. /blog.
 email: leonardlee@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
