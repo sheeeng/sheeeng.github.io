@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Leonard's WebLog
+baseurl: "" # the subpath of your site, e.g. /blog.
 email: leonardlee@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   The atmosphere had 340.92 CO₂ (ppm), 1600,69 CH₄ (ppb), and 303.56 N₂O (ppb) in the year that I took my first breath.
