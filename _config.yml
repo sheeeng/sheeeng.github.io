@@ -105,6 +105,7 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#post-dates
   # _pages
   - scope:
       path: "_pages"
