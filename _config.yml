@@ -14,12 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Leonard's WebLog
-logo: "favicon-padded-square-rounded.png" # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-masthead-logo
+logo: "logo.png" # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-masthead-logo
 baseurl: "" # the subpath of your site, e.g. /blog.
-email: leonardlee@outlook.com
+email: "leonardlee@outlook.com"
 description: >- # this means to ignore newlines until "baseurl:"
   The atmosphere had 340.92 CO₂ (ppm), 1600,69 CH₄ (ppb), and 303.56 N₂O (ppb) in the year that I took my first breath.
-github_username:  sheeeng
+github_username: "sheeeng"
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#skin
 search: true # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-search
 
@@ -31,7 +31,7 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: "Europe/Oslo" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-exclude: [ README.md ]
+exclude: ["README.md"]
 
 include:
   - _pages
@@ -58,9 +58,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Leonard Lee"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My boring biography constrained to a sentence or two goes here."
+  name: "Leonard Lee"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "My boring biography constrained to a sentence or two goes here."
   links:
     - label: Email
       icon: fas fa-fw fa-envelope-square
