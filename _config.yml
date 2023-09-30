@@ -68,18 +68,18 @@ author:
     My boring biography constrained to a sentence or two goes here.
     Yet another boring biography constrained to a sentence or two goes here.
   location: "Oslo, Norway"
-  twitter: "sheeeng"
+  github: "sheeeng"
   instagram: "leeonarding"
   linkedin: "sheeeng"
-  github: "sheeeng"
-  # stackoverflow: "12345"
+  stackoverflow: "19896910"
+  twitter: "sheeeng"
   links:
     - label: Email
       icon: fas fa-fw fa-envelope-square
       url: mailto:leonardlee@outlook.com
     - label: GitHub
       icon: fab fa-fw fa-github
-      # url: https://github.com
+      # url: https://github.com/sheeeng
     - label: Instagram
       icon: fab fa-fw fa-instagram
       # url: https://instagram.com/leeonarding
@@ -89,6 +89,9 @@ author:
     - label: Twitter
       icon: fab fa-fw fa-twitter
       # url: https://twitter.com/sheeeng
+    - label: Stack Overflow
+      icon: fab fa-fw fa-stack-overflow
+      # url: https://stackoverflow.com/users/19896910/leonard
     - label: Website
       icon: fas fa-fw fa-link
       url: https://sheeeng.github.io
