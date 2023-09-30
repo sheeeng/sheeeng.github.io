@@ -124,8 +124,10 @@ twitter: # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site
 facebook: # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#facebook-open-graph
   username: "sheeeng"
 
+# https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml#L98
+# https://github.com/mmistakes/minimal-mistakes/blob/8a67ce8e41ec850f2d7c373aa47739b2abfee6f1/_config.yml#L98
 analytics: # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#analytics
-  provider: "google-gtag"
+  provider: "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id: "UA-81362922-1"
-    anonymize_ip: false # default
+    anonymize_ip: false # true, false (default)
