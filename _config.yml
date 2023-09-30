@@ -178,6 +178,7 @@ tag_archive:
   type: liquid
   path: /tags/
 
+# https://mmistakes.github.io/minimal-mistakes/docs/collections/
 collections:
   portfolio:
     output: true
