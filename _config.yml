@@ -1,3 +1,6 @@
+# https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml
+# https://github.com/mmistakes/minimal-mistakes/blob/8a67ce8e41ec850f2d7c373aa47739b2abfee6f1/_config.yml
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -15,22 +18,92 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#skin
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+# locale: "en-US"
 title: Leonard's WebLog
-logo: "logo.png" # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-masthead-logo
-baseurl: "" # the subpath of your site, e.g. /blog.
-email: "leonardlee@outlook.com"
+# title_separator: "-"
+# subtitle: "Subtitle" # site tagline that appears below site title in masthead
+# name: "Name"
 description: >- # this means to ignore newlines until "baseurl:"
   The atmosphere had 340.92 CO₂ (ppm), 1600,69 CH₄ (ppb), and 303.56 N₂O (ppb) in the year that I took my first breath.
+url: "https://sheeeng.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+# baseurl: "" # the subpath of your site, e.g. "/blog"
+repository: "sheeeng/sheeeng.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+# teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo: "logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png" # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-masthead-logo
+# masthead_title: # overrides the website title displayed in the masthead, use " " for no title
+# breadcrumbs: false # true, false (default)
+# words_per_minute: 200
+
+search: true # true, false (default)
+search_full_content: false # true, false (default)
+search_provider: lunr # lunr (default), algolia, google
+lunr:
+  search_within_pages: false # true, false (default)
+
+twitter: # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-twitter-username
+  username: "sheeeng"
+facebook: # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#facebook-open-graph
+  username: "sheeeng"
+og_image: "logo.png"
+
+# https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml#L98
+# https://github.com/mmistakes/minimal-mistakes/blob/8a67ce8e41ec850f2d7c373aa47739b2abfee6f1/_config.yml#L98
+analytics: # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#analytics
+  provider: "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id: "UA-81362922-1"
+    anonymize_ip: false # true, false (default)
+
+author:
+  name: "Leonard Lee"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: >-
+    My boring biography constrained to a sentence or two goes here.
+    Yet another boring biography constrained to a sentence or two goes here.
+  location: "Oslo, Norway"
+  twitter: "sheeeng"
+  instagram: "leeonarding"
+  linkedin: "sheeeng"
+  github: "sheeeng"
+  # stackoverflow: "12345"
+  links:
+    - label: Email
+      icon: fas fa-fw fa-envelope-square
+      url: mailto:leonardlee@outlook.com
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      # url: https://github.com
+    - label: Instagram
+      icon: fab fa-fw fa-instagram
+      # url: https://instagram.com/leeonarding
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      # url: https://www.linkedin.com/in/sheeeng/
+    - label: Twitter
+      icon: fab fa-fw fa-twitter
+      # url: https://twitter.com/sheeeng
+    - label: Website
+      icon: fas fa-fw fa-link
+      url: https://sheeeng.github.io
+
+footer:
+  links:
+    - label: Email
+      icon: fas fa-fw fa-envelope-square
+      url: mailto:leonardlee@outlook.com
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sheeeng"
+
+email: "leonardlee@outlook.com"
 github_username: "sheeeng"
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#skin
-search: true # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-search
 
 # Build settings
 markdown: kramdown
@@ -66,39 +139,6 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-author:
-  name: "Leonard Lee"
-  avatar: "/assets/images/bio-photo.jpg"
-  bio: "My boring biography constrained to a sentence or two goes here."
-  links:
-    - label: Email
-      icon: fas fa-fw fa-envelope-square
-      url: mailto:leonardlee@outlook.com
-    - label: GitHub
-      icon: fab fa-fw fa-github
-      url: https://github.com
-    - label: Instagram
-      icon: fab fa-fw fa-instagram
-      url: https://instagram.com/leeonarding
-    - label: LinkedIn
-      icon: fab fa-fw fa-linkedin
-      url: https://www.linkedin.com/in/sheeeng/
-    - label: Twitter
-      icon: fab fa-fw fa-twitter
-      url: https://twitter.com/sheeeng
-    - label: Website
-      icon: fas fa-fw fa-link
-      url: https://sheeeng.github.io
-
-footer:
-  links:
-    - label: Email
-      icon: fas fa-fw fa-envelope-square
-      url: mailto:leonardlee@outlook.com
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/sheeeng"
-
 defaults:
   # _posts
   - scope:
@@ -126,17 +166,3 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-
-twitter: # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-twitter-username
-  username: "sheeeng"
-
-facebook: # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#facebook-open-graph
-  username: "sheeeng"
-
-# https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml#L98
-# https://github.com/mmistakes/minimal-mistakes/blob/8a67ce8e41ec850f2d7c373aa47739b2abfee6f1/_config.yml#L98
-analytics: # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#analytics
-  provider: "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id: "UA-81362922-1"
-    anonymize_ip: false # true, false (default)
