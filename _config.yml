@@ -72,7 +72,7 @@ author:
   instagram: "leeonarding"
   linkedin: "sheeeng"
   stackoverflow: "19896910"
-  twitter: "sheeeng"
+  # twitter: "sheeeng"
   links:
     - label: Email
       icon: fas fa-fw fa-envelope-square
