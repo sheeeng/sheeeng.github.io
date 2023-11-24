@@ -77,6 +77,9 @@ author:
     - label: Email
       icon: fas fa-fw fa-envelope-square
       url: mailto:sheeeng@gmail.com
+    - label: Bluesky
+      icon: fas fa-fw fa-square
+      url: https://bsky.app/profile/sheeeng.bsky.social
     - label: GitHub
       icon: fab fa-fw fa-github
       # url: https://github.com/sheeeng
