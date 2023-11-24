@@ -106,13 +106,13 @@ footer:
   links:
     - label: Email
       icon: fas fa-fw fa-envelope-square
-      url: mailto:leonardlee@outlook.com
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/sheeeng"
+      url: mailto:sheeeng@gmail.com
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/sheeeng
 
-email: "leonardlee@outlook.com"
-github_username: "sheeeng"
+email: sheeeng@gmail.com
+github_username: sheeeng
 
 # Build settings
 markdown: kramdown
