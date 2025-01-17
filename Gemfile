@@ -44,3 +44,4 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 gem "webrick", "~> 1.8"
 gem 'html-proofer', "~> 5"
+gem 'faraday-retry', '~> 2.2'
