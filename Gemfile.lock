@@ -326,6 +326,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   html-proofer (~> 5)
+  jekyll (~> 3.7)
   jekyll-include-cache
   minimal-mistakes-jekyll
   tzinfo-data
