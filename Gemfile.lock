@@ -308,13 +308,14 @@ GEM
     unf_ext (0.0.8.2)
     unicode-display_width (1.8.0)
     verbal_expressions (0.1.5)
-    webrick (1.8.1)
+    webrick (1.9.1)
     yell (2.2.2)
     zeitwerk (2.6.11)
 
 PLATFORMS
   arm64-darwin-24
   x86_64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   github-pages
@@ -327,7 +328,7 @@ DEPENDENCIES
   jekyll-sitemap
   jemoji
   tzinfo-data
-  webrick (~> 1.8)
+  webrick (~> 1.9)
 
 BUNDLED WITH
    2.5.22
