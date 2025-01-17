@@ -6,7 +6,12 @@ categories: how-to macos word japanese furigana
 
 ## How to: Enable Furigana on Microsoft Word for macOS
 
+- The following steps are described using Microsoft® Word for Mac Version 16.93 (25011212).
+
+![About Word](/assets/images/enable-furigana-on-microsoft-word-for-macos/01-about-word.png "About Word")
+
 - Open `System Settings` on macOS with English (United States) as primary language.
+
 - Click `General` -> `Language & Region`. Scroll all the way to the bottom.
 - Press `+` at the bottom of `Applications` list.
 - Select `Microsoft Word.app` for `Application`.
