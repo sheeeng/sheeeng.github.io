@@ -34,7 +34,7 @@ trap cleanUp EXIT
 
 # ----------------------------------------------------------------------
 
-pushd "${SCRIPT_DIRECTORY}"
+pushd "${GIT_ROOT_DIRECTORY}" || exit
 date --universal +"%Y%m%dT%H%M%SZ"
 
 # Check if the script is running as root.
