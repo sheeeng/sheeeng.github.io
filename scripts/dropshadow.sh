@@ -47,6 +47,14 @@ fi
 input_image="$1"
 output_image="${input_image%.*}-transparent-gradient-border.png"
 
+# https://stackoverflow.com/questions/60680252/create-macos-style-screenshots-with-dropshadow-using-imagemagick/76144202#76144202
+# https://stackoverflow.com/a/76144202
+magick \
+  $input_image \
+  \( +clone -background black -shadow 40x50+0+36 \) \
+  +swap -background transparent -layers merge +repage \
+  $output_image
+
 # 2. \( +clone -background black -shadow 50x15+9+15 \)
 # 	•	\( and \): Used to group operations on a cloned copy of the input image.
 # 	•	+clone: Creates a duplicate of the input image to work on.
@@ -74,26 +82,26 @@ output_image="${input_image%.*}-transparent-gradient-border.png"
 # https://stackoverflow.com/a/7699638
 
 # Get the dimensions of the input image
-dimensions=$(magick identify -format "%wx%h" "$input_image")
-width=$(echo $dimensions | cut -d'x' -f1)
-height=$(echo $dimensions | cut -d'x' -f2)
+# dimensions=$(magick identify -format "%wx%h" "$input_image")
+# width=$(echo $dimensions | cut -d'x' -f1)
+# height=$(echo $dimensions | cut -d'x' -f2)
 
-# Calculate the extent size (e.g., adding 64 pixels to both width and height)
-extent_width=$((width + 64))
-extent_height=$((height + 64))
+# # Calculate the extent size (e.g., adding 64 pixels to both width and height)
+# extent_width=$((width + 64))
+# extent_height=$((height + 64))
 
 # Apply the shadow and center the image
-magick -verbose ${input_image} \
-  \( +clone -background black -shadow 50x32+0+0 \) \
-  +swap \
-  -bordercolor none \
-  -border 32 \
-  -background none \
-  -gravity center \
-  -extent ${extent_width}x${extent_height} \
-  -mosaic \
-  +repage \
-  "${output_image}"
+# magick -verbose ${input_image} \
+#   \( +clone -background black -shadow 50x32+0+0 \) \
+#   +swap \
+#   -bordercolor none \
+#   -border 32 \
+#   -background none \
+#   -gravity center \
+#   -extent ${extent_width}x${extent_height} \
+#   -mosaic \
+#   +repage \
+#   "${output_image}"
 
 # magick $input_image \
 #   -bordercolor none -border 50x50 \
