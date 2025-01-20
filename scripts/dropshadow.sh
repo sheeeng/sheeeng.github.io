@@ -45,13 +45,13 @@ fi
 
 # Input and output file names
 input_image="$1"
-output_image="${input_image%.*}-transparent-gradient-border.png"
+output_image="${input_image%.*}-dropshadow.png"
 
 # https://stackoverflow.com/questions/60680252/create-macos-style-screenshots-with-dropshadow-using-imagemagick/76144202#76144202
 # https://stackoverflow.com/a/76144202
 magick \
   $input_image \
-  \( +clone -background black -shadow 40x50+0+36 \) \
+  \( +clone -background black -shadow 64x16+0+16 \) \
   +swap -background transparent -layers merge +repage \
   $output_image
 
