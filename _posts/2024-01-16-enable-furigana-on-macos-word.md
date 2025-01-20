@@ -4,7 +4,7 @@ date:   2024-01-16 16:00
 categories: how-to macos word japanese furigana
 ---
 
-## How to: Enable Furigana (振り仮名/読み仮名/ルビ) on Microsoft Word for macOS
+Cannot enable Furigana (振り仮名/読み仮名/ルビ) on Microsoft Word for macOS? Here's a detailed guide to do it.
 
 - The following steps are described using Microsoft® Word for Mac Version 16.93 (25011212).
 
