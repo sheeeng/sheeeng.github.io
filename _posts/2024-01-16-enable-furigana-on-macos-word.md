@@ -36,14 +36,14 @@ categories: how-to macos word japanese furigana
 - Open Microsoft Word document with mixed Japanese text: Hiragana (平仮名), Katakana (片仮名), and Kanji (漢字).
 - Select those Japanese text (Example: `笑って　泣いて　君と出会えて`).
 
-![テキスト](/assets/images/enable-furigana-on-microsoft-word-for-macos/06-テキスト.png "テキスト")
+![テキスト](/assets/images/enable-furigana-on-microsoft-word-for-macos/06-テキスト-dropshadow.png "テキスト")
 
 - Click `ルビ` (Ruby / Phonetic Guide...) button inside the`Home | Font` Ribbon menu, and click `OK`.
 
-![マイクロソフト-ワード-ルビ-1](/assets/images/enable-furigana-on-microsoft-word-for-macos/07-マイクロソフト-ワード-ルビ.png "マイクロソフト-ワード-ルビ-1")
+![マイクロソフト-ワード-ルビ-1](/assets/images/enable-furigana-on-microsoft-word-for-macos/07-マイクロソフト-ワード-ルビ-dropshadow.png "マイクロソフト-ワード-ルビ-1")
 
 ![マイクロソフト-ワード-ルビ-2](/assets/images/enable-furigana-on-microsoft-word-for-macos/08-マイクロソフト-ワード-ルビ.png "マイクロソフト-ワード-ルビ-2")
 
 - Furigana (振り仮名/読み仮名/ルビ) is shown.
 
-![テキスト-振り仮名](/assets/images/enable-furigana-on-microsoft-word-for-macos/09-テキスト-振り仮名.png "テキスト-振り仮名")
+![テキスト-振り仮名](/assets/images/enable-furigana-on-microsoft-word-for-macos/09-テキスト-振り仮名-dropshadow.png "テキスト-振り仮名")
