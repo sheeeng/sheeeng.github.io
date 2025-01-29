@@ -34,13 +34,13 @@ Cannot enable Furigana (振り仮名/読み仮名/ルビ) on Microsoft Word for 
 ![既定の編集言語を変更](/assets/images/enable-furigana-on-microsoft-word-for-macos/05-マイクロソフト-ワード-既定の編集言語を変更.png "既定の編集言語を変更")
 
 - Open Microsoft Word document with non-Hiragana (平仮名) Japanese text: Katakana (片仮名) and/or Kanji (漢字).
-- Select the entire below example Japanese text.
+- Select the entire example Japanese text. Here's an example.
 
   <ruby style="font-size: 32px;">日本語能力試験</ruby>
 
 - Click `ルビ` (Ruby / Phonetic Guide...) button inside the`Home | Font` Ribbon menu, and click `OK`.
 
-![マイクロソフト-ワード-ルビ-1](/assets/images/enable-furigana-on-microsoft-word-for-macos/07-マイクロソフト-ワード-ルビ-dropshadow.png "マイクロソフト-ワード-ルビ-1")
+![マイクロソフト-ワード-ルビ-1](/assets/images/enable-furigana-on-microsoft-word-for-macos/06-マイクロソフト-ワード-ルビ-dropshadow.png "マイクロソフト-ワード-ルビ-1")
 
 - Furigana (振り仮名/読み仮名/ルビ) is shown.
 
