@@ -1,6 +1,6 @@
 ---
 title:  "Enable Furigana on Microsoft Word for macOS"
-date:   2024-01-16 16:00
+date:   2025-01-16 16:00
 categories: how-to macos word japanese furigana
 ---
 

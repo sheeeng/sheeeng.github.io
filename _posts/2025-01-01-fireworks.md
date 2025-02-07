@@ -1,6 +1,6 @@
 ---
 title:  "Fireworks"
-date:   2024-01-01 12:00
+date:   2025-01-01 12:00
 categories: diary
 ---
 
