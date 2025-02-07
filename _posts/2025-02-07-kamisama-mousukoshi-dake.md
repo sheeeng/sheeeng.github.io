@@ -1,6 +1,6 @@
 ---
 title:  "「神様、もう少しだけ……」"
-date:   2024-02-07 21:00
+date:   2025-02-07 21:00
 categories: quote japanese japanese-drama
 ---
 
