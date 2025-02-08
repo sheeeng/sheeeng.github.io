@@ -4,9 +4,7 @@ date:   2025-01-01 12:00
 categories: diary
 ---
 
-With every passing year, everyone grows older. But, I still struggling with the same problem througout my entire life.
-
-Took the moment to reflect on the temporal moments of our fragile lives.
+With every passing year, everyone grows older. Fireworks reminded me to reflect on the temporal moments of our fragile lives.
 
 ![Fireworks](/assets/images/diary/2025-01-01-fireworks-dropshadow.png "Fireworks")
 
