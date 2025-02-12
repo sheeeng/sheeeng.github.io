@@ -3,5 +3,9 @@
   "extends": [
     "config:best-practices",
     "config:recommended"
-  ]
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "description": "https://docs.renovatebot.com/configuration-options/#lockfilemaintenance"
+  }
 }
