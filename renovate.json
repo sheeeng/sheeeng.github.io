@@ -2,7 +2,11 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:best-practices",
-    "config:recommended"
+    ":disableDependencyDashboard"
+  ],
+  "extendsDescriptions": [
+    "https://docs.renovatebot.com/upgrade-best-practices/#use-the-configbest-practices-preset",
+    "https://docs.renovatebot.com/presets-default/#disabledependencydashboard"
   ],
   "lockFileMaintenance": {
     "enabled": true,
@@ -11,5 +15,9 @@
   "nix": {
     "enabled": true,
     "description": "https://docs.renovatebot.com/modules/manager/nix/#enabling"
+  },
+  "pre-commit": {
+    "enabled": true,
+    "description": "https://docs.renovatebot.com/modules/manager/pre-commit/#enabling"
   }
 }
