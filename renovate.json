@@ -19,5 +19,9 @@
   "pre-commit": {
     "enabled": true,
     "description": "https://docs.renovatebot.com/modules/manager/pre-commit/#enabling"
+  },
+  "bundler": {
+    "enabled": true,
+    "description": "https://docs.renovatebot.com/modules/manager/bundler/#enabling"
   }
 }
