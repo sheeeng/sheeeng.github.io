@@ -1,0 +1,131 @@
+## Flox Environment Manifest -----------------------------------------
+##
+##   _Everything_ you need to know about the _manifest_ is here:
+##
+##   https://flox.dev/docs/reference/command-reference/manifest.toml/
+##
+## -------------------------------------------------------------------
+# Flox manifest version managed by Flox CLI
+version = 1
+
+
+## Install Packages --------------------------------------------------
+##  $ flox install gum  <- puts a package in [install] section below
+##  $ flox search gum   <- search for a package
+##  $ flox show gum     <- show all versions of a package
+## -------------------------------------------------------------------
+[install]
+github-pages.pkg-path = "rubyPackages.github-pages"
+bundler.pkg-path = "bundler"
+# Build tools for native extensions
+gcc.pkg-path = "gcc"
+make.pkg-path = "gnumake"
+pkg-config.pkg-path = "pkg-config"
+# gum.pkg-path = "gum"
+# gum.version = "^0.14.5"
+
+
+## Environment Variables ---------------------------------------------
+##  ... available for use in the activated environment
+##      as well as [hook], [profile] scripts and [services] below.
+## -------------------------------------------------------------------
+[vars]
+# Set bundle path to keep gems local to project
+BUNDLE_PATH = "vendor/bundle"
+BUNDLE_GEMFILE = "$FLOX_ENV_PROJECT/Gemfile"
+# Build configuration for native extensions
+BUNDLE_BUILD__JSON = "--with-cflags=-Wno-error=implicit-function-declaration"
+MAKE = "make -j4"
+
+
+## Activation Hook ---------------------------------------------------
+##  ... run by _bash_ shell when you run 'flox activate'.
+## -------------------------------------------------------------------
+[hook]
+on-activate = '''
+  # Install Gemfile dependencies if Gemfile exists
+  if [ -f "$FLOX_ENV_PROJECT/Gemfile" ]; then
+    echo "Installing Gemfile dependencies..."
+    cd "$FLOX_ENV_PROJECT"
+
+    # Configure bundle for better native extension support
+    bundle config set --local path 'vendor/bundle'
+    bundle config set --local jobs 4
+    bundle config set --local retry 3
+
+    # Clean any previous failed installations
+    if [ -d "vendor/bundle" ]; then
+      echo "Cleaning previous bundle installation..."
+      rm -rf vendor/bundle
+    fi
+
+    # Install with verbose output for debugging
+    echo "Installing gems (this may take a while for native extensions)..."
+    if bundle install --verbose; then
+      echo "✅ Gemfile dependencies installed successfully!"
+    else
+      echo "❌ Bundle install failed. Try running 'bundle install --verbose' manually for more details."
+    fi
+  fi
+'''
+
+
+## Profile script ----------------------------------------------------
+## ... sourced by _your shell_ when you run 'flox activate'.
+## -------------------------------------------------------------------
+[profile]
+common = '''
+  echo "🚀 Jekyll environment activated!"
+  echo "📦 Gemfile dependencies will be installed automatically"
+  echo "💎 Run 'bundle exec jekyll serve' to start the development server"
+'''
+## Shell-specific customizations such as setting aliases go here:
+# bash = ...
+# zsh  = ...
+# fish = ...
+
+
+## Services ---------------------------------------------------------
+##  $ flox services start             <- Starts all services
+##  $ flox services status            <- Status of running services
+##  $ flox activate --start-services  <- Activates & starts all
+## ------------------------------------------------------------------
+[services]
+# myservice.command = "python3 -m http.server"
+
+
+## Include ----------------------------------------------------------
+## ... environments to create a composed environment
+## ------------------------------------------------------------------
+[include]
+# environments = [
+#     { dir = "../common" }
+# ]
+
+
+## Build and publish your own packages ------------------------------
+##  $ flox build
+##  $ flox publish
+## ------------------------------------------------------------------
+[build]
+# [build.myproject]
+# description = "The coolest project ever"
+# version = "0.0.1"
+# command = """
+#   mkdir -p $out/bin
+#   cargo build --release
+#   cp target/release/myproject $out/bin/myproject
+# """
+
+
+## Other Environment Options -----------------------------------------
+[options]
+# Systems that environment is compatible with
+# systems = [
+#   "aarch64-darwin",
+#   "aarch64-linux",
+#   "x86_64-darwin",
+#   "x86_64-linux",
+# ]
+# Uncomment to disable CUDA detection.
+# cuda-detection = false
