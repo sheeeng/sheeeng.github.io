@@ -12,5 +12,9 @@ devenv.local.nix
 # direnv
 .direnv
 
+# nix
+result
+result-*
+
 # pre-commit
 .pre-commit-config.yaml
