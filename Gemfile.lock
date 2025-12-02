@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/mmistakes/minimal-mistakes.git
-  revision: b6fcae623322a4e322a2da328d591e239565ca2b
+  revision: ffa59904e2cc8da8071d4a6771758c75a8db4349
   specs:
     minimal-mistakes-jekyll (4.27.3)
       jekyll (>= 3.7, < 5.0)
@@ -301,7 +301,7 @@ GEM
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.8.0)
     uri (1.1.1)
-    webrick (1.9.1)
+    webrick (1.9.2)
 
 PLATFORMS
   aarch64-linux-gnu
