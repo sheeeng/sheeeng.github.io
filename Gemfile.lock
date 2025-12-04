@@ -315,6 +315,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-include-cache
   minimal-mistakes-jekyll!
   nokogiri (>= 1.18.9)
 
