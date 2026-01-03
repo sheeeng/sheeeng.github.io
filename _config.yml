@@ -69,10 +69,10 @@ author:
     My boring biography constrained to a sentence or two goes here.
     Yet another boring biography constrained to a sentence or two goes here.
   location: "Oslo, Norway"
-  github: "sheeeng"
-  instagram: "leeonarding"
-  linkedin: "sheeeng"
-  stackoverflow: "19896910"
+  # github: "sheeeng"
+  # instagram: "leeonarding"
+  # linkedin: "sheeeng"
+  # stackoverflow: "19896910"
   # twitter: "sheeeng"
   links:
     # keep-sorted start
@@ -107,14 +107,14 @@ author:
 
 footer:
   links:
-    - label: Email
-      icon: fas fa-fw fa-envelope-square
-      url: mailto:sheeeng@gmail.com
+    # - label: Email
+    #   icon: fas fa-fw fa-envelope-square
+    #   url: mailto:leonard.lee@example.com
     - label: GitHub
       icon: fab fa-fw fa-github
       url: https://github.com/sheeeng
 
-email: sheeeng@gmail.com
+email: ''
 github_username: sheeeng
 
 # Build settings
