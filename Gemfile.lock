@@ -57,6 +57,8 @@ GEM
       logger
     faraday-net_http (3.4.2)
       net-http (~> 0.5)
+    faraday-retry (2.4.0)
+      faraday (~> 2.0)
     ffi (1.17.2-aarch64-linux-gnu)
     ffi (1.17.2-aarch64-linux-musl)
     ffi (1.17.2-arm-linux-gnu)
@@ -314,10 +316,11 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  faraday-retry
   github-pages
   jekyll-include-cache
   minimal-mistakes-jekyll!
   nokogiri (>= 1.18.9)
 
 BUNDLED WITH
-   2.5.22
+  4.0.3
