@@ -75,21 +75,22 @@ author:
   stackoverflow: "19896910"
   # twitter: "sheeeng"
   links:
-    - label: Email
-      icon: fas fa-fw fa-envelope-square
-      url: mailto:sheeeng@gmail.com
+    # keep-sorted start
     - label: Bluesky
       icon: fas fa-fw fa-square
       url: https://bsky.app/profile/sheeeng.bsky.social
+    - label: Email
+      icon: fas fa-fw fa-envelope-square
+      # url: mailto:leonard.lee@example.com
     - label: GitHub
       icon: fab fa-fw fa-github
-      # url: https://github.com/sheeeng
+      url: https://github.com/sheeeng
     - label: Instagram
       icon: fab fa-fw fa-instagram
-      # url: https://instagram.com/leeonarding
+      url: https://instagram.com/leeonarding
     - label: LinkedIn
       icon: fab fa-fw fa-linkedin
-      # url: https://www.linkedin.com/in/sheeeng/
+      url: https://www.linkedin.com/in/sheeeng/
     - label: Mastodon
       icon: fab fa-fw fa-mastodon
       url: https://hachyderm.io/@leonard
@@ -98,10 +99,11 @@ author:
     #   # url: https://twitter.com/sheeeng
     - label: Stack Overflow
       icon: fab fa-fw fa-stack-overflow
-      # url: https://stackoverflow.com/users/19896910/leonard
+      url: https://stackoverflow.com/users/19896910/leonard
     - label: Website
       icon: fas fa-fw fa-link
-      url: https://sheeeng.github.io
+      url: https://www.leonardlee.net/
+    # keep-sorted end
 
 footer:
   links:
