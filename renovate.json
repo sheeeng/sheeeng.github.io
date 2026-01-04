@@ -4,10 +4,6 @@
     "config:best-practices",
     ":disableDependencyDashboard"
   ],
-  "extendsDescriptions": [
-    "https://docs.renovatebot.com/upgrade-best-practices/#use-the-configbest-practices-preset",
-    "https://docs.renovatebot.com/presets-default/#disabledependencydashboard"
-  ],
   "lockFileMaintenance": {
     "enabled": true,
     "description": "https://docs.renovatebot.com/configuration-options/#lockfilemaintenance"
@@ -20,8 +16,75 @@
     "enabled": true,
     "description": "https://docs.renovatebot.com/modules/manager/pre-commit/#enabling"
   },
-  "bundler": {
-    "enabled": true,
-    "description": "https://docs.renovatebot.com/modules/manager/bundler/#enabling"
-  }
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/\\.nix$/",
+        "/flake\\.nix$/",
+        "/default\\.nix$/",
+        "/shell\\.nix$/"
+      ],
+      "matchStrings": [
+        "fetchFromGitHub\\s*\\{[^}]*owner\\s*=\\s*\"(?<depName>[^\"]+)\"[^}]*repo\\s*=\\s*\"(?<packageName>[^\"]+)\"[^}]*rev\\s*=\\s*\"(?<currentValue>[^\"]+)\"",
+        "fetchFromGitHub\\s*\\{[^}]*repo\\s*=\\s*\"(?<packageName>[^\"]+)\"[^}]*owner\\s*=\\s*\"(?<depName>[^\"]+)\"[^}]*rev\\s*=\\s*\"(?<currentValue>[^\"]+)\""
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "{{{depName}}}/{{{packageName}}}",
+      "extractVersionTemplate": "^(?<version>.*)$"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/\\.nix$/",
+        "/flake\\.nix$/",
+        "/default\\.nix$/",
+        "/shell\\.nix$/"
+      ],
+      "matchStrings": [
+        "fetchFromGitHub\\s*\\{[^}]*owner\\s*=\\s*\"(?<depName>[^\"]+)\"[^}]*repo\\s*=\\s*\"(?<packageName>[^\"]+)\"[^}]*rev\\s*=\\s*\"(?<currentValue>[a-f0-9]{40})\"",
+        "fetchFromGitHub\\s*\\{[^}]*repo\\s*=\\s*\"(?<packageName>[^\"]+)\"[^}]*owner\\s*=\\s*\"(?<depName>[^\"]+)\"[^}]*rev\\s*=\\s*\"(?<currentValue>[a-f0-9]{40})\""
+      ],
+      "datasourceTemplate": "github-commits",
+      "depNameTemplate": "{{{depName}}}/{{{packageName}}}",
+      "extractVersionTemplate": "^(?<version>.*)$",
+      "versioningTemplate": "loose"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchFileNames": [
+        "**/*.nix"
+      ],
+      "matchManagers": [
+        "custom.regex"
+      ],
+      "description": "Update Nix fetchFromGitHub revisions.",
+      "enabled": true
+    },
+    {
+      "matchManagers": [
+        "pre-commit"
+      ],
+      "description": "Group pre-commit hook updates together.",
+      "groupName": "pre-commit hooks",
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true,
+      "schedule": [
+        "before 3am on Monday"
+      ],
+      "labels": [
+        "dependencies",
+        "pre-commit"
+      ]
+    },
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "description": "Ignore GitHub Actions dependencies as they are handled by Dependabot.",
+      "enabled": false
+    }
+  ]
 }
