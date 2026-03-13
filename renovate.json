@@ -81,6 +81,13 @@
     },
     {
       "matchManagers": [
+        "bundler"
+      ],
+      "description": "Ignore Bundler dependencies as they are handled by Dependabot.",
+      "enabled": false
+    },
+    {
+      "matchManagers": [
         "github-actions"
       ],
       "description": "Ignore GitHub Actions dependencies as they are handled by Dependabot.",
