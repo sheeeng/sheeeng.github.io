@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/mmistakes/minimal-mistakes.git
-  revision: 5786c35342d4f359ca40479f38e6255785ab1591
+  revision: 1d03dd1bb4ac84d356e225ea0b639c1c1418a1f9
   specs:
     minimal-mistakes-jekyll (4.28.0)
       jekyll (>= 3.7, < 5.0)
@@ -26,7 +26,7 @@ GEM
       securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
       uri (>= 0.13.1)
-    addressable (2.8.9)
+    addressable (2.9.0)
       public_suffix (>= 2.0.2, < 8.0)
     base64 (0.3.0)
     bigdecimal (3.3.1)
@@ -59,14 +59,14 @@ GEM
       net-http (~> 0.5)
     faraday-retry (2.4.0)
       faraday (~> 2.0)
-    ffi (1.17.3-aarch64-linux-gnu)
-    ffi (1.17.3-aarch64-linux-musl)
-    ffi (1.17.3-arm-linux-gnu)
-    ffi (1.17.3-arm-linux-musl)
-    ffi (1.17.3-arm64-darwin)
-    ffi (1.17.3-x86_64-darwin)
-    ffi (1.17.3-x86_64-linux-gnu)
-    ffi (1.17.3-x86_64-linux-musl)
+    ffi (1.17.4-aarch64-linux-gnu)
+    ffi (1.17.4-aarch64-linux-musl)
+    ffi (1.17.4-arm-linux-gnu)
+    ffi (1.17.4-arm-linux-musl)
+    ffi (1.17.4-arm64-darwin)
+    ffi (1.17.4-x86_64-darwin)
+    ffi (1.17.4-x86_64-linux-gnu)
+    ffi (1.17.4-x86_64-linux-musl)
     forwardable-extended (2.6.0)
     gemoji (4.1.0)
     github-pages (232)
@@ -237,7 +237,7 @@ GEM
       gemoji (>= 3, < 5)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
-    json (2.19.1)
+    json (2.19.4)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
