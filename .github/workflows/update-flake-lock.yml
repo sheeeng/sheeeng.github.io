@@ -1,4 +1,4 @@
-name: "Update Flake Lock"
+name: "Update Nix Flake Lock"
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 permissions: {}
 
 jobs:
-  update-flake-lock:
+  update-nix-flake-lock:
     permissions:
       contents: write
       pull-requests: write
@@ -38,7 +38,7 @@ jobs:
       # https://github.com/orgs/community/discussions/26560#discussioncomment-12555758
       # https://github.com/actions/checkout/blob/8e8c483db84b4bee98b60c0593521ed34d9990e8/README.md#L358
 
-      - name: Update Flake Lock & Create PR
+      - name: Update Flake Lock & Create Pull Request
         run: |
           # Configure git identity.
           git config user.name "github-actions[bot]"
