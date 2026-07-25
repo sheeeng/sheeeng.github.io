@@ -38,8 +38,6 @@ jobs:
           cache-version: 0 # Increment this number if you need to re-download cached gems
       - id: pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
-      - name: Record build commit
-        run: echo "git_sha: \"$(git rev-parse --short=8 HEAD)\"" > _data/build.yml
       - run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         # Outputs to the './_site' directory by default.
         env:

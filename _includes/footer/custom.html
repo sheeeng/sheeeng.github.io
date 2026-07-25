@@ -6,11 +6,13 @@ https://github.com/mmistakes/minimal-mistakes/blob/8a67ce8e41ec850f2d7c373aa4773
 <!-- start custom footer snippets -->
 
 <p class="page__footer-copyright">
+  {%- assign build_revision = site.github.build_revision | default: "local" -%}
+  {%- assign build_sha = build_revision | slice: 0, 8 -%}
   Built from
-  {%- if site.repository and site.data.build.git_sha != "local" %}
-  <a href="https://github.com/{{ site.repository }}/commit/{{ site.data.build.git_sha }}">{{ site.data.build.git_sha }}</a>.
+  {%- if site.repository and build_revision != "local" %}
+  <a href="https://github.com/{{ site.repository }}/commit/{{ build_revision }}">{{ build_sha }}</a>.
   {%- else %}
-  {{ site.data.build.git_sha }}.
+  {{ build_sha }}.
   {%- endif %}
   Made with 💚 by Leonard.
 </p>

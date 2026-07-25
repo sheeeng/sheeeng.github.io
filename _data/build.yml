@@ -1,4 +1,0 @@
-# Populated at build time by .github/workflows/deploy-pages.yml with the
-# short commit SHA the site was built from. Falls back to "local" for
-# local `jekyll build`/`jekyll serve` runs.
-git_sha: "local"
