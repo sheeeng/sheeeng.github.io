@@ -5,4 +5,14 @@ https://github.com/mmistakes/minimal-mistakes/blob/8a67ce8e41ec850f2d7c373aa4773
 
 <!-- start custom footer snippets -->
 
+<p class="page__footer-copyright">
+  Built from
+  {%- if site.repository and site.data.build.git_sha != "local" %}
+  <a href="https://github.com/{{ site.repository }}/commit/{{ site.data.build.git_sha }}">{{ site.data.build.git_sha }}</a>.
+  {%- else %}
+  {{ site.data.build.git_sha }}.
+  {%- endif %}
+  Made with 💚 by Leonard.
+</p>
+
 <!-- end custom footer snippets -->
