@@ -9,11 +9,10 @@ https://github.com/mmistakes/minimal-mistakes/blob/8a67ce8e41ec850f2d7c373aa4773
   {%- assign build_revision = site.github.build_revision | default: "local" -%}
   {%- assign build_sha = build_revision | slice: 0, 8 -%}
   Built from
-  {%- assign sha_style = "font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: transparent; padding: 0; font-size: inherit;" -%}
   {%- if site.repository and build_revision != "local" %}
-  <a href="https://github.com/{{ site.repository }}/commit/{{ build_revision }}" style="text-decoration: underline;"><code style="{{ sha_style }}">{{ build_sha }}</code></a>.
+  <a href="https://github.com/{{ site.repository }}/commit/{{ build_revision }}" style="text-decoration: underline;">{{ build_sha }}</a>.
   {%- else %}
-  <code style="{{ sha_style }}">{{ build_sha }}</code>.
+  {{ build_sha }}.
   {%- endif %}
   Made with 💚 by Leonard.
 </p>
