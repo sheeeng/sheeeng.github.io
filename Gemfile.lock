@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/mmistakes/minimal-mistakes.git
-  revision: fab4865371f06d9799828c5d13897ae5404bca38
+  revision: 7c68402e079564981274be1d07da0387e3ebdf97
   specs:
     minimal-mistakes-jekyll (4.28.1)
       jekyll (>= 3.7, < 5.0)
@@ -224,7 +224,7 @@ GEM
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
-    json (2.21.2)
+    json (3.0.2)
     kramdown (2.3.1)
       rexml
     kramdown-parser-gfm (1.1.0)
