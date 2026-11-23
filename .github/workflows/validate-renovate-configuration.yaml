@@ -33,11 +33,11 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
           fetch-depth: 0
-      - uses: determinatesystems/nix-installer-action@3138316df39ed29be04236d7ffc686fa525866aa # v23
+      - uses: determinatesystems/nix-installer-action@v23
       - name: Validate Renovate Configuration
         run: |-
           nix shell nixpkgs#renovate --command renovate-config-validator --strict
